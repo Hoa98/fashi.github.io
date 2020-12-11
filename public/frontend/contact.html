@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Fashi Template">
+    <meta name="keywords" content="Fashi, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fashi | Template</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/themify-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+    <!-- Header Section Begin -->
+    <header class="header-section">
+
+        <div class="container">
+            <div class="inner-header">
+                <div class="row">
+                    <div class="col-lg-2 col-md-2">
+                        <div class="logo">
+                            <a href="../index.html">
+                                <img src="img/logo.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-7">
+                        <div class="advanced-search">
+                            <button type="button" class="category-btn">Sản phẩm</button>
+                            <div class="input-group">
+                                <form action="search.html" method="get" class="w-100" autocomplete="off">
+                                    <input type="text" name="keyword" oninput="inpKeyword(this)"
+                                        placeholder="Bạn cần gì?" required>
+                                    <button type="submit"><i class="ti-search"></i></button>
+                                    <div id="countryList">
+                                        <div class="sremain">
+                                            <ul>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 text-right col-md-3">
+                        <ul class="nav-right">
+                            <li>
+                                <a href="tel:0987654321" class="login-panel">
+                                    <i class="fa fa-phone"></i>
+                                    <span>0987.654.321</span>
+                                </a>
+                            </li>
+                            <li class="cart-icon">
+                                <a href="shopping-cart.html">
+                                    <i class="icon_bag_alt"></i>
+                                    <span class="js-totalProCart">3</span>
+                                </a>
+                                <div class="cart-hover">
+                                    <div class="select-items">
+                                        <table>
+                                            <tbody>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="select-total">
+                                        <span>Tổng:</span>
+                                        <h5>$120.00</h5>
+                                    </div>
+                                    <div class="select-button">
+                                        <a href="shopping-cart.html" class="primary-btn view-card">Xem giỏ hàng</a>
+                                        <a href="check-out.html" class="primary-btn checkout-btn">Thanh toán</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-item">
+            <div class="container">
+                <div class="nav-depart">
+                    <div class="depart-btn">
+                        <i class="ti-menu"></i>
+                        <span>Danh mục</span>
+                        <ul class="depart-hover">
+                        </ul>
+                    </div>
+                </div>
+                <nav class="nav-menu mobile-menu">
+                    <ul>
+                        <li><a href="../index.html">Trang chủ</a></li>
+                        <li><a href="introduce.html">Giới thiệu</a></li>
+                        <li><a href="shop.html">Sản phẩm</a>
+                            <ul class="dropdown">
+                            </ul>
+                        </li>
+                        <li><a href="blog.html">Tin tức</a></li>
+                        <li class="active"><a href="contact.html">Liên hệ</a></li>
+                    </ul>
+                </nav>
+                <div id="mobile-menu-wrap"></div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Breadcrumb Section Begin -->
+    <div class="breacrumb-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-text">
+                        <a href="../index.html"><i class="fa fa-home"></i> Trang chủ</a>
+                        <span>Liên hệ</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb Section Begin -->
+
+    <!-- Map Section Begin -->
+    <div class="map spad">
+        <div class="container">
+            <div class="map-inner">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.307431080888!2d105.79834381488327!3d21.020381486002922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab5c6aebee0f%3A0xa1cf9998a9baa64f!2zMTU1IE5ndXnhu4VuIEtoYW5nLCBZw6puIEhvw6AsIEPhuqd1IEdp4bqleSwgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1607229168017!5m2!1svi!2s"
+                    height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- Map Section Begin -->
+
+    <!-- Contact Section Begin -->
+    <section class="contact-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="contact-title">
+                        <h4>Liên hệ</h4>
+                        <p class="text-justify">Với mục tiêu không ngừng phát triển và hoàn thiện, sản phẩm của Fashi luôn mang đến cho phụ nữ
+                            sự tự tin, toả sáng để thành công trong công việc, cuộc sống với phong cách thời trang riêng
+                            biệt, ấn tượng.</p>
+                    </div>
+                    <div class="contact-widget">
+                        <div class="cw-item">
+                            <div class="ci-icon">
+                                <i class="ti-location-pin"></i>
+                            </div>
+                            <div class="ci-text">
+                                <span>Địa chỉ:</span>
+                                <p>155 Nguyễn Khang, Yên Hoà, Cầu Giấy, Hà Nội</p>
+                            </div>
+                        </div>
+                        <div class="cw-item">
+                            <div class="ci-icon">
+                                <i class="ti-mobile"></i>
+                            </div>
+                            <div class="ci-text">
+                                <span>Điện thoại:</span>
+                                <p>(+84)0987.654.321</p>
+                            </div>
+                        </div>
+                        <div class="cw-item">
+                            <div class="ci-icon">
+                                <i class="ti-email"></i>
+                            </div>
+                            <div class="ci-text">
+                                <span>Email:</span>
+                                <p>cskh@fashi.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 offset-lg-1">
+                    <div class="contact-form">
+                        <div class="leave-comment">
+                            <h4>Để lại thắc mắc</h4>
+                            <p>Nhân viên của chúng tôi sẽ gọi lại sau và giải đáp thắc mắc của bạn.</p>
+                            <form class="comment-form" id="form-contact">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <input type="text" placeholder="Họ và tên" name="fullname" data-rule="required|minlength-2">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <input type="text" placeholder="Số điện thoại" name="phone" data-rule="required|checkPhone">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <input type="email" placeholder="Email" name="email" data-rule="required|checkEmail">
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <textarea placeholder="Nội dung" name="content" data-rule="required|minlength-4"></textarea>
+                                        <button type="submit" class="site-btn">Gửi cho chúng tôi</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="footer-left">
+                        <div class="footer-logo">
+                            <a href="#"><img src="img/footer-logo.png" alt=""></a>
+                        </div>
+                        <ul>
+                            <li>Address: 60-49 Road 11378 New York</li>
+                            <li>Phone: +65 11.188.888</li>
+                            <li>Email: hello.colorlib@gmail.com</li>
+                        </ul>
+                        <div class="footer-social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 offset-lg-1">
+                    <div class="footer-widget">
+                        <h5>Information</h5>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Checkout</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Serivius</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="footer-widget">
+                        <h5>My Account</h5>
+                        <ul>
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Shopping Cart</a></li>
+                            <li><a href="#">Shop</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="newslatter-item">
+                        <h5>Join Our Newsletter Now</h5>
+                        <p>Get E-mail updates about our latest shop and special offers.</p>
+                        <form action="#" class="subscribe-form">
+                            <input type="text" placeholder="Enter Your Mail">
+                            <button type="button">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-reserved">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="copyright-text">
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy;
+                            <script>document.write(new Date().getFullYear());</script> All rights reserved | This
+                            template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a
+                                href="https://colorlib.com" target="_blank">Colorlib</a>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.zoom.min.js"></script>
+    <script src="js/jquery.dd.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/moment.min.js"></script>
+    <script src="js/sweetalert2/dist/sweetalert2.all.min.js"></script>
+    <script src="js/js-form-validator.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        window.onload = function () {
+            function show_cate() {
+                let depart_cate = document.querySelector('ul.depart-hover');
+                let dropdown_cate = document.querySelector('ul.dropdown');
+
+                fetch("http://localhost:3000/categories", {
+                    method: "GET"
+                }).then(response => response.json())
+                    .then(data => {
+                        let result = data.map(function (cate, index, arr) {
+                            return ` <li><a href="list-product.html?id=${cate.id}">${cate.name}</a></li>`;
+                        }).join("");
+
+                        depart_cate.innerHTML = result;
+                        dropdown_cate.innerHTML = result;
+                    })
+            }
+            show_cate();
+        }
+        function cartHover() {
+            let totalCartUnit = document.querySelector('.cart-icon .js-totalProCart');
+            if (localStorage.getItem("cart") == null || localStorage.getItem("cart") == '[]') {
+                let cart_hover = document.querySelector('.cart-icon .cart-hover');
+                cart_hover.innerHTML = `<div class="col-12 text-center">
+                <img src="img/cart.png" width="100">
+                <p class="mb-3">Chưa có sản phẩm trong giỏ hàng</p>
+            </div>`;
+                totalCartUnit.innerText = "0";
+            } else {
+                let selectUnit = document.querySelector('.select-items table tbody');
+                let selectTotal = document.querySelector('.cart-hover .select-total h5');
+                var cart = JSON.parse(localStorage.cart);
+                var cartUnit = ""
+                var numberPro = 0;
+                var money = 0;
+                for (var i = 0; i < cart.length; i++) {
+                    money += cart[i].price_new * cart[i].qty;
+                    numberPro += cart[i].qty;
+                    cartUnit += `<tr>
+                                    <td class="si-pic"><img src="${cart[i].images}" width="70" alt=""></td>
+                                    <td class="si-text">
+                                        <div class="product-selected">
+                                            <p>${new Intl.NumberFormat('de-DE').format(cart[i].price_new)}đ x ${cart[i].qty}</p>
+                                            <h6>${cart[i].name}</h6>
+                                            
+                                        </div>
+                                    </td>
+                                    <td><b class="rounded-circle mr-3 d-inline-block p-2" style="background:${cart[i].color}"></b></td>
+                                    <td class="si-close">
+                                        <button class="border-0 bg-transparent" onclick="removeUnit(${cart[i].id},'${cart[i].color}')"><i class="ti-close"></i></button>
+                                    </td>
+                                </tr>`;
+                }
+                selectUnit.innerHTML = cartUnit;
+                selectTotal.innerHTML = new Intl.NumberFormat('de-DE').format(money) + 'đ';
+                totalCartUnit.innerHTML = numberPro;
+            }
+        }
+        cartHover()
+        function removeUnit(id, color) {
+            var cart = JSON.parse(localStorage.cart);
+            //kiểm tra sản phẩm có trong giỏ hàng chưa
+            for (var i = 0; i < cart.length; i++) {
+                if (cart[i].id == id && cart[i].color == color) {
+                    cart.splice(i, 1)
+                    break;
+                }
+            }
+            //Luu vao localStorage
+            localStorage.setItem("cart", JSON.stringify(cart));
+            if (localStorage.getItem("cart") == null || localStorage.getItem("cart") == '[]') {
+                let totalCartUnit = document.querySelector('.cart-icon .js-totalProCart');
+                let cart_hover = document.querySelector('.cart-icon .cart-hover');
+                cart_hover.innerHTML = `<div class="col-12 text-center">
+                <img src="img/cart.png" width="100">
+                <p class="mb-3">Chưa có sản phẩm trong giỏ hàng</p>
+            </div>`;
+                totalCartUnit.innerText = "0";
+            } else {
+                cartHover();
+            }
+        }
+        function inpKeyword(e) {
+            let sremain = document.querySelector('#countryList .sremain ul');
+            sremain.style.display = "block";
+            fetch("http://localhost:3000/product?name_like=" + e.value, {
+                method: "GET"
+            }).then(res => res.json())
+                .then(data => {
+                    let result = data.map(function (pro, index, arr) {
+                        return `<li>
+                                    <a href="http://localhost:3000/frontend/product.html?id=${pro.id}">
+                                        <p> <img src="${pro.images}"></p>
+                                        <div>
+                                            <h3>${pro.name}</h3>
+                                            <p>${new Intl.NumberFormat('de-DE').format(pro.price - (pro.price * pro.sale))}đ
+                                                <span> ${pro.sale > 0 ? "<del>" + new Intl.NumberFormat('de-DE').format(pro.price) + "</del>đ" : ""}</span> 
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>`;
+                    }).join("");
+                    sremain.innerHTML = result;
+                })
+        }
+
+        function saveContact(){
+      //1. Lấy dữ liệu 
+      let fullname = document.querySelector("input[name=fullname]").value;
+      let email = document.querySelector("input[name=email]").value;
+      let phone = document.querySelector("input[name=phone]").value;
+      let content = document.querySelector("textarea[name=content]").value;
+      let created_at = new moment();
+      //3. Gửi dữ liệu lên server
+      // trước hết là tạo đối tượng để cài dữ liệu vào
+      let dataPost = {
+        name: fullname,
+        email: email,
+        phone: phone,
+        content: content,
+        created_at: created_at,
+        status: "off"
+      };
+
+      fetch("http://localhost:3000/contact", {
+        method: 'POST', // thêm mới thì dùng post
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(dataPost), // chuyển dữ liệu object trên thành chuỗi json
+      })
+        .then((response) => response.json()) // chuyển kết quả trả về thành json object
+        .then((data) => {
+            //Thông báo
+            document.querySelector("input[name=fullname]").value="";
+            document.querySelector("input[name=email]").value="";
+            document.querySelector("input[name=phone]").value="";
+            document.querySelector("textarea[name=content]").value="";
+
+        }).then(()=>{
+            Swal.fire({
+                icon: 'success',
+                text: 'Chúng tôi sẽ liên hệ cho bạn để giải đáp thắc mắc!',
+              })
+        })
+        .catch((error) => {
+          console.error('Error:', error); // ghi log nếu xảy ra lỗi
+        });
+        }
+
+        let validator = new Validator(document.querySelector('#form-contact'), function (err, res) {
+      if (res === true) {
+        saveContact();
+      }
+
+      return false;
+    }, {
+      rules: {
+        checkPhone: function (value) {
+          return (/^((09|03|07|08|05|\+84)+([0-9]{8})\b)$/g).test(value);
+        },
+        checkEmail: function (value) {
+          return (/^[a-zA-Z0-9_\.\-]+@(([a-zA-Z0-9\-]{2,})+\.)+([a-zA-Z0-9]{2,4}){1,2}$/).test(value);
+        }
+      },
+      messages: {
+        en: {
+          required: {
+            empty: 'Không được để trống',
+            incorrect: 'Nhập sai thông tin'
+          },
+          minlength: {
+            empty: 'Hãy nhập tối thiểu {0} ký tự',
+            incorrect: 'Hãy nhập tối thiểu {0} ký tự'
+          },
+          checkPhone: {
+            empty: 'Nhập đường số điện thoại',
+            incorrect: 'Số điện thoại không đúng định dạng'
+          },
+          checkEmail: {
+            empty: 'Nhập email',
+            incorrect: 'Địa chỉ email không đúng định dạng'
+          }
+        }
+      }
+    });
+    </script>
+</body>
+
+</html>

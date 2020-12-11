@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Admin</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <div id="wrapper">
+    <!-- NAVBAR -->
+    <nav class="navbar nav-top">
+      <div class="brand ml-5 mr-4">
+        <h2><a href="../index.html"><img src="../../frontend/img/footer-logo.png" alt=""></a></h2>
+      </div>
+      <div class="container-fluid">
+        <div class="navbar-btn ml-5 mr-5">
+          <button type="button" class="btn-toggle-fullwidth  btn-default"><i class="fas fa-bars"></i></button>
+        </div>
+        <div id="navbar-menu" class="mr-5">
+          <div class="dropdown no-arrow">
+            <a class="btn-transparent dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="http://lorempixel.com/30/30/" width="30" height="30" class="rounded-circle" alt="Avatar">
+              <span class="text-white ml-3"> Admin <i class="icon-submenu fal fa-chevron-down"></i></span>
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a href="#"><i class="fal fa-envelope"></i> <span>Thông tin</span></a></li>
+              <li><a href="#"><i class="fal fa-cog"></i> <span>Cài đặt</span></a></li>
+              <li><button class="btn border-0 js-logout"><i class="fal fa-sign-out"></i> <span>Đăng xuất</span></button></li>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+    <!-- END NAVBAR -->
+    <!-- LEFT SIDEBAR -->
+    <div id="sidebar-nav" class="sidebar">
+      <div class="sidebar-scroll">
+        <nav>
+          <ul class="nav">
+            <li><a href="../index.html"><i class="fal fa-home"></i> <span>Trang chủ</span></a></li>
+            <li><a href="../category/categories.html"><i class="fal fa-book-alt"></i> <span>Danh mục</span></a></li>
+            <li><a href="../product/products.html"><i class="fal fa-chart-bar"></i> <span>Sản phẩm</span></a></li>
+            <li><a href="users.html" class="active"><i class="fal fa-user-alt"></i> <span>Tài khoản</span></a></li>
+            <li>
+              <a href="#subPages" data-toggle="collapse" class="collapsed"><i class="fal fa-file-alt"></i>
+                <span>Bài viết</span> <i class="icon-submenu fal fa-chevron-left"></i></a>
+              <div id="subPages" class="collapse ">
+                <ul class="nav">
+                  <li><a href="../post/posts.html">Tất cả bài viết</a></li>
+                  <li><a href="../post/add-post.html">Thêm bài viết</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="../contact/contact.html"><i class="fal fa-address-book"></i> <span>Liên hệ</span></a></li>
+            <li><a href="../order/orders.html"><i class="fal fa-cart-plus"></i> <span>Hóa đơn</span></a></li>
+            <li><a href="../slider/sliders.html"><i class="fal fa-file-image"></i> <span>Slider</span></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- END LEFT SIDEBAR -->
+    <!-- MAIN -->
+    <div class="main">
+      <!-- MAIN CONTENT -->
+      <div class="main-content">
+        <h3>Tạo mới user</h3>
+        <form action="" id="add-user-form">
+          <div class="row">
+            <div class="col-6">
+              <div class="form-group">
+                <label for="">Tài khoản<span class="text-danger">*</span></label>
+                <input type="text" name="username" class="form-control" placeholder="Tên tài khoản..."
+                  data-rule="required|minlength-2">
+              </div>
+              <div class="form-group">
+                <label for="">Họ tên<span class="text-danger">*</span></label>
+                <input type="text" name="fullname" class="form-control" placeholder="Họ và tên..."
+                  data-rule="required|minlength-2">
+              </div>
+              <div class="form-group">
+                <label for="">Email<span class="text-danger">*</span></label>
+                <input type="email" name="email" class="form-control" placeholder="Địa chỉ email..."
+                  data-rule="required|checkEmail">
+              </div>
+              <div class="form-group">
+                <label for="">Mật khẩu<span class="text-danger">*</span></label>
+                <input type="password" name="password" class="form-control" placeholder="Mật khẩu"
+                  data-rule="required|minlength-6">
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-group">
+                <label for="">Ảnh user<span class="text-danger">*</span></label>
+                <input type="text" name="avatar" id="file" class="form-control" placeholder="Nhập URL"
+                  data-rule="required|checkImgUrl">
+                <div class="js-show-img mt-3"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="gender">Giới tính<span class="text-danger">*</span></label>
+                <select name="gender" id="gender" class="custom-select" data-rule="required">
+                  <option value="">Chọn giới tính</option>
+                  <option value="Nam">Nam</option>
+                  <option value="Nữ">Nữ</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="">Vai trò<span class="text-danger">*</span></label>
+                <select name="role" id="role" class="custom-select" data-rule="required">
+                  <option value="">Vai trò</option>
+                  <option value="1">Admin</option>
+                  <option value="0">Member</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="">Địa chỉ</label>
+            <textarea name="address" cols="30" rows="4" id="address" class="form-control detail" placeholder="Nhập địa chỉ"
+              data-rule="required|minlength-4"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary pl-5 pr-5">Lưu</button>
+          <a href="users.html" class="btn btn-danger">Hủy</a>
+        </form>
+      </div>
+      <!-- END MAIN CONTENT -->
+    </div>
+    <!-- END MAIN -->
+    <footer>
+      <div class="container-fluid">
+        <p class="copyright text-right pt-2">&copy; 2020 All Rights Reserved.</p>
+      </div>
+    </footer>
+  </div>
+  <script src="../js/jquery-3.5.1.min.js"></script>
+  <script src="../js/popper.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/sweetalert2/dist/sweetalert2.all.min.js"></script>
+  <script src="https://cdn.tiny.cloud/1/6fgy6zhj7h3xo9pm4dkp502s7unmk9eysfyciufaxlfjemes/tinymce/5/tinymce.min.js"
+    referrerpolicy="origin"></script>
+  <script src="../js/js-form-validator.min.js"></script>
+  <script src="../js/common.js"></script>
+  <script>
+    const element = document.querySelector('form');
+    element.addEventListener('submit', event => {
+      event.preventDefault();
+      // actual logic, e.g. validate the form
+      console.log('Form submission cancelled.');
+    });
+    let url_img = document.querySelector('#file');
+    url_img.addEventListener("input", function () {
+      let jsShowImg = document.querySelector('.js-show-img');
+      jsShowImg.innerHTML = `<img src="${url_img.value}" height="69"  alt="Đường dẫn ảnh sai">`;
+    })
+    function saveNew() {
+      //1. Lấy dữ liệu 
+      let username = document.querySelector("input[name=username]").value;
+      let fullname = document.querySelector("input[name=fullname]").value;
+      let email = document.querySelector("input[name=email]").value;
+      let password = document.querySelector("input[name=password]").value;
+      let avatar = document.querySelector("input[name=avatar]").value;
+      let gender = document.querySelector("#gender").value;
+      let address = tinymce.get('address').getContent();
+      let role = document.querySelector('#role').value;
+
+      //3. Gửi dữ liệu lên server
+      // trước hết là tạo đối tượng để cài dữ liệu vào
+      let dataPost = {
+        username: username,
+        fullname: fullname,
+        email: email,
+        password: password,
+        gender: gender,
+        address: address,
+        avatar: avatar,
+        role: Number(role)
+      };
+
+      let url_post = 'http://localhost:3000/user';  // định nghĩa biến lưu địa chỉ post dữ liệu
+
+      fetch(url_post, {
+        method: 'POST', // thêm mới thì dùng post
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(dataPost), // chuyển dữ liệu object trên thành chuỗi json
+      })
+        .then((response) => response.json()) // chuyển kết quả trả về thành json object
+        .then((data) => {
+
+          window.location.href = 'users.html';
+        })
+        .catch((error) => {
+          console.error('Error:', error); // ghi log nếu xảy ra lỗi
+        });
+
+    }
+    let validator = new Validator(document.querySelector('#add-user-form'), function (err, res) {
+      if (res === true) {
+        saveNew();
+      }
+
+      return false;
+    }, {
+      rules: {
+        checkImgUrl: function (value) {
+          return (/\.(gif|jpe?g|tiff|png|webp|bmp)$/i).test(value);
+        },
+        checkEmail: function (value) {
+          return (/^[a-zA-Z0-9_\.\-]+@(([a-zA-Z0-9\-]{2,})+\.)+([a-zA-Z0-9]{2,4}){1,2}$/).test(value);
+        }
+      },
+      messages: {
+        en: {
+          required: {
+            empty: 'Không được để trống',
+            incorrect: 'Nhập sai thông tin'
+          },
+          minlength: {
+            empty: 'Hãy nhập tối thiểu {0} ký tự',
+            incorrect: 'Hãy nhập tối thiểu {0} ký tự'
+          },
+          checkImgUrl: {
+            empty: 'Nhập đường dẫn ảnh',
+            incorrect: 'Đường dẫn ảnh không đúng định dạng'
+          },
+          checkEmail: {
+            empty: 'Nhập email',
+            incorrect: 'Địa chỉ email không đúng định dạng'
+          }
+        }
+      }
+    });
+    //Trinh soan van ban
+    tinymce.init({
+      selector: '.detail',
+      plugins: "image",
+      mode: "specific_textareas",
+      editor_selector: "mceEditor"
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,6 @@
+{
+    "/api/": "/",
+    "/categories/:id/product": "/product?cate_id=:id",
+    "/categories/:id/product/:id_sp": "/product?cate_id=:id&id=:id"
+  }
+  
